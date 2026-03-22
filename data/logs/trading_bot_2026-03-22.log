@@ -1,0 +1,390 @@
+2026-03-22 16:51:59 | INFO     | app.main:create_app:16 - Database tables initialized.
+2026-03-22 16:51:59 | INFO     | app.main:startup_event:28 - Starting Trading Bot Application...
+2026-03-22 16:58:44 | INFO     | app.main:shutdown_event:33 - Shutting down Trading Bot Application...
+2026-03-22 17:01:41 | INFO     | app.main:create_app:16 - Database tables initialized.
+2026-03-22 17:01:41 | INFO     | app.main:startup_event:28 - Starting Trading Bot Application...
+2026-03-22 17:01:55 | ERROR    | app.broker.kite_broker:set_access_token:25 - Failed to generate access token: 'NoneType' object has no attribute 'encode'
+2026-03-22 17:02:05 | ERROR    | app.core.engine:start:71 - Cannot start engine: No Kite access token. Please login first.
+2026-03-22 17:03:33 | INFO     | app.main:shutdown_event:33 - Shutting down Trading Bot Application...
+2026-03-22 17:04:17 | INFO     | app.main:create_app:16 - Database tables initialized.
+2026-03-22 17:04:17 | INFO     | app.main:startup_event:28 - Starting Trading Bot Application...
+2026-03-22 17:05:25 | INFO     | app.main:shutdown_event:33 - Shutting down Trading Bot Application...
+2026-03-22 17:05:41 | INFO     | app.main:create_app:16 - Database tables initialized.
+2026-03-22 17:05:41 | INFO     | app.main:startup_event:28 - Starting Trading Bot Application...
+2026-03-22 17:06:24 | ERROR    | app.broker.kite_broker:set_access_token:25 - Failed to generate access token: Token is invalid or has expired.
+2026-03-22 17:07:53 | ERROR    | app.core.engine:start:71 - Cannot start engine: No Kite access token. Please login first.
+2026-03-22 17:08:21 | INFO     | app.broker.kite_broker:set_access_token:22 - Successfully generated Kite access token
+2026-03-22 17:08:23 | INFO     | app.core.engine:start:74 - Starting Trading Engine...
+2026-03-22 17:08:23 | INFO     | app.core.engine:_load_historical_for_strategy:44 - Loading historical data for NSE:RELIANCE via Yahoo Finance...
+2026-03-22 17:08:27 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:RELIANCE
+2026-03-22 17:08:27 | INFO     | app.broker.yfinance_feed:start:32 - YFinance Market Data Feed started.
+2026-03-22 17:08:27 | INFO     | app.broker.yfinance_feed:subscribe:44 - Subscribed to NSE:RELIANCE via YFinance Feed
+2026-03-22 17:08:27 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:RELIANCE
+2026-03-22 17:08:38 | ERROR    | app.broker.yfinance_feed:_poll_data:72 - Error in YFinance tick callback: Invalid frequency: 5T. Failed to parse with error message: ValueError("Invalid frequency: T. Failed to parse with error message: KeyError('T'). Did you mean min?")
+2026-03-22 17:08:49 | ERROR    | app.broker.yfinance_feed:_poll_data:72 - Error in YFinance tick callback: Invalid frequency: 5T. Failed to parse with error message: ValueError("Invalid frequency: T. Failed to parse with error message: KeyError('T'). Did you mean min?")
+2026-03-22 17:08:59 | ERROR    | app.broker.yfinance_feed:_poll_data:72 - Error in YFinance tick callback: Invalid frequency: 5T. Failed to parse with error message: ValueError("Invalid frequency: T. Failed to parse with error message: KeyError('T'). Did you mean min?")
+2026-03-22 17:09:09 | ERROR    | app.broker.yfinance_feed:_poll_data:72 - Error in YFinance tick callback: Invalid frequency: 5T. Failed to parse with error message: ValueError("Invalid frequency: T. Failed to parse with error message: KeyError('T'). Did you mean min?")
+2026-03-22 17:09:16 | INFO     | app.main:shutdown_event:33 - Shutting down Trading Bot Application...
+2026-03-22 17:09:32 | INFO     | app.main:create_app:16 - Database tables initialized.
+2026-03-22 17:09:32 | INFO     | app.main:startup_event:28 - Starting Trading Bot Application...
+2026-03-22 17:17:16 | INFO     | app.broker.kite_broker:set_access_token:22 - Successfully generated Kite access token
+2026-03-22 17:17:18 | INFO     | app.core.engine:start:74 - Starting Trading Engine...
+2026-03-22 17:17:18 | INFO     | app.core.engine:_load_historical_for_strategy:44 - Loading historical data for NSE:RELIANCE via Yahoo Finance...
+2026-03-22 17:17:20 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:RELIANCE
+2026-03-22 17:17:20 | INFO     | app.broker.yfinance_feed:start:32 - YFinance Market Data Feed started.
+2026-03-22 17:17:20 | INFO     | app.broker.yfinance_feed:subscribe:44 - Subscribed to NSE:RELIANCE via YFinance Feed
+2026-03-22 17:17:20 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:RELIANCE
+2026-03-22 17:19:30 | INFO     | app.main:shutdown_event:33 - Shutting down Trading Bot Application...
+2026-03-22 17:22:05 | INFO     | app.main:create_app:16 - Database tables initialized.
+2026-03-22 17:22:05 | INFO     | app.main:startup_event:28 - Starting Trading Bot Application...
+2026-03-22 17:22:22 | INFO     | app.broker.kite_broker:set_access_token:22 - Successfully generated Kite access token
+2026-03-22 17:22:24 | INFO     | app.core.engine:start:114 - Starting Trading Engine Multi-Strategy...
+2026-03-22 17:22:24 | INFO     | app.core.engine:_load_all_historical:83 - Loading bulk historical data for all 50 Nifty stocks...
+2026-03-22 17:22:28 | INFO     | app.core.engine:start:114 - Starting Trading Engine Multi-Strategy...
+2026-03-22 17:22:28 | INFO     | app.core.engine:_load_all_historical:83 - Loading bulk historical data for all 50 Nifty stocks...
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:ADANIENT
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:ADANIPORTS
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:APOLLOHOSP
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:ASIANPAINT
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:AXISBANK
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:BAJAJ-AUTO
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:BAJFINANCE
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:BAJAJFINSV
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:ADANIENT
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:BPCL
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:ADANIPORTS
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:BHARTIARTL
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:APOLLOHOSP
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:BRITANNIA
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:ASIANPAINT
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:AXISBANK
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:CIPLA
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:BAJAJ-AUTO
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:COALINDIA
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:BAJFINANCE
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:DIVISLAB
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:BAJAJFINSV
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:DRREDDY
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:BPCL
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:EICHERMOT
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:GRASIM
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:BHARTIARTL
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:HCLTECH
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:BRITANNIA
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:CIPLA
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:HDFCBANK
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:COALINDIA
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:HDFCLIFE
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:DIVISLAB
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:HEROMOTOCO
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:DRREDDY
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:HINDALCO
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:HINDUNILVR
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:ICICIBANK
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:ITC
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:EICHERMOT
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:INDUSINDBK
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:GRASIM
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:INFY
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:HCLTECH
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:JSWSTEEL
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:HDFCBANK
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:KOTAKBANK
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:HDFCLIFE
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:LT
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:HEROMOTOCO
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:M&M
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:HINDALCO
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:MARUTI
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:HINDUNILVR
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:NTPC
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:ICICIBANK
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:NESTLEIND
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:ITC
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:ONGC
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:INDUSINDBK
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:POWERGRID
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:INFY
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:RELIANCE
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:JSWSTEEL
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:SBILIFE
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:KOTAKBANK
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:SBIN
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:LT
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:SUNPHARMA
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:M&M
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:TCS
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:MARUTI
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:TATACONSUM
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:TATASTEEL
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:NTPC
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:TECHM
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:NESTLEIND
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:TITAN
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:ONGC
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:UPL
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:POWERGRID
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:ULTRACEMCO
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:RELIANCE
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:WIPRO
+2026-03-22 17:22:37 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:ADANIENT via YFinance Feed
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:SBILIFE
+2026-03-22 17:22:37 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:ADANIENT
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:SBIN
+2026-03-22 17:22:37 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:ADANIPORTS via YFinance Feed
+2026-03-22 17:22:37 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:ADANIPORTS
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:SUNPHARMA
+2026-03-22 17:22:37 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:APOLLOHOSP via YFinance Feed
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:TCS
+2026-03-22 17:22:37 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:APOLLOHOSP
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:TATACONSUM
+2026-03-22 17:22:37 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:ASIANPAINT via YFinance Feed
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:TATASTEEL
+2026-03-22 17:22:37 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:ASIANPAINT
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:TECHM
+2026-03-22 17:22:37 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:AXISBANK via YFinance Feed
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:TITAN
+2026-03-22 17:22:37 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:AXISBANK
+2026-03-22 17:22:37 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:UPL
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:BAJAJ-AUTO via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:ULTRACEMCO
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:BAJAJ-AUTO
+2026-03-22 17:22:38 | INFO     | app.data.aggregator:load_historical_data:117 - Loaded 375 historical candles for NSE:WIPRO
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:BAJFINANCE via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:ADANIENT
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:BAJFINANCE
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:ADANIPORTS
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:BAJAJFINSV via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:APOLLOHOSP
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:BAJAJFINSV
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:ASIANPAINT
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:BPCL via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:AXISBANK
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:BPCL
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:BAJAJ-AUTO
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:BHARTIARTL via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:BAJFINANCE
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:BHARTIARTL
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:BAJAJFINSV
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:BRITANNIA via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:BPCL
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:BRITANNIA
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:BHARTIARTL
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:CIPLA via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:BRITANNIA
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:CIPLA
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:CIPLA
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:COALINDIA via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:COALINDIA
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:COALINDIA
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:DIVISLAB via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:DIVISLAB
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:DIVISLAB
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:DRREDDY via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:DRREDDY
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:DRREDDY
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:EICHERMOT via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:EICHERMOT
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:EICHERMOT
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:GRASIM via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:GRASIM
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:GRASIM
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:HCLTECH via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:HCLTECH
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:HCLTECH
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:HDFCBANK via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:HDFCBANK
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:HDFCBANK
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:HDFCLIFE via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:HDFCLIFE
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:HDFCLIFE
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:HEROMOTOCO via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:HEROMOTOCO
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:HEROMOTOCO
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:HINDALCO via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:HINDALCO
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:HINDALCO
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:HINDUNILVR via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:HINDUNILVR
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:HINDUNILVR
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:ICICIBANK via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:ICICIBANK
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:ICICIBANK
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:ITC via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:ITC
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:ITC
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:INDUSINDBK via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:INDUSINDBK
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:INDUSINDBK
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:INFY via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:INFY
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:INFY
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:JSWSTEEL via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:JSWSTEEL
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:JSWSTEEL
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:KOTAKBANK via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:KOTAKBANK
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:KOTAKBANK
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:LTIM via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:LTIM
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:LTIM
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:LT via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:LT
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:LT
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:M&M via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:M&M
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:M&M
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:MARUTI via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:MARUTI
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:MARUTI
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:NTPC via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:NTPC
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:NTPC
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:NESTLEIND via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:NESTLEIND
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:NESTLEIND
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:ONGC via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:ONGC
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:ONGC
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:POWERGRID via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:POWERGRID
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:POWERGRID
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:RELIANCE via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:RELIANCE
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:RELIANCE
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:SBILIFE via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:SBILIFE
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:SBILIFE
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:SBIN via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:SBIN
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:SBIN
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:SUNPHARMA via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:SUNPHARMA
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:SUNPHARMA
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:TCS via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:TCS
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:TCS
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:TATACONSUM via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:TATACONSUM
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:TATACONSUM
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:TATAMOTORS via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:TATAMOTORS
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:TATAMOTORS
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:TATASTEEL via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:TATASTEEL
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:TATASTEEL
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:TECHM via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:TECHM
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:TECHM
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:TITAN via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:TITAN
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:TITAN
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:UPL via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:UPL
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:UPL
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:ULTRACEMCO via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:ULTRACEMCO
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:ULTRACEMCO
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:subscribe:35 - Subscribed to NSE:WIPRO via YFinance Feed
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:WIPRO
+2026-03-22 17:22:38 | INFO     | app.strategy.base_strategy:start:21 - Strategy 44_MA_Strategy started for NSE:WIPRO
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:start:24 - YFinance Market Data Feed started for all tracked stocks.
+2026-03-22 17:22:38 | INFO     | app.broker.yfinance_feed:start:24 - YFinance Market Data Feed started for all tracked stocks.
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:ADANIENT] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:ADANIPORTS] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:APOLLOHOSP] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:ASIANPAINT] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:AXISBANK] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:BAJAJ-AUTO] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:BAJFINANCE] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:BAJAJFINSV] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:BPCL] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:BHARTIARTL] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:BRITANNIA] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:CIPLA] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:COALINDIA] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:DIVISLAB] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:DRREDDY] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:EICHERMOT] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:GRASIM] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:HCLTECH] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:HDFCBANK] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:HDFCLIFE] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:HEROMOTOCO] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:HINDALCO] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:HINDUNILVR] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:ICICIBANK] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:ITC] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:INDUSINDBK] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:INFY] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:JSWSTEEL] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:KOTAKBANK] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:LT] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:M&M] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:MARUTI] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:NTPC] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:NESTLEIND] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:ONGC] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:POWERGRID] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:RELIANCE] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:SBILIFE] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:SBIN] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:SUNPHARMA] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:TCS] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:TATACONSUM] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:TATASTEEL] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:TECHM] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:TITAN] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:UPL] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:ULTRACEMCO] New 5min candles completed: 1
+2026-03-22 17:25:17 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:WIPRO] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:ADANIENT] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:ADANIPORTS] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:APOLLOHOSP] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:ASIANPAINT] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:AXISBANK] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:BAJAJ-AUTO] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:BAJFINANCE] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:BAJAJFINSV] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:BPCL] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:BHARTIARTL] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:BRITANNIA] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:CIPLA] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:CIPLA] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:COALINDIA] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:DIVISLAB] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:DRREDDY] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:EICHERMOT] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:GRASIM] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:HCLTECH] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:HDFCBANK] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:HDFCLIFE] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:HEROMOTOCO] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:HINDALCO] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:HINDUNILVR] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:ICICIBANK] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:ITC] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:INDUSINDBK] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:INFY] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:JSWSTEEL] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:KOTAKBANK] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:LT] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:M&M] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:MARUTI] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:NTPC] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:NESTLEIND] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:ONGC] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:POWERGRID] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:RELIANCE] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:SBILIFE] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:SBIN] New 5min candles completed: 1
+2026-03-22 17:30:19 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:SUNPHARMA] New 5min candles completed: 1
+2026-03-22 17:30:20 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:TCS] New 5min candles completed: 1
+2026-03-22 17:30:20 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:TATACONSUM] New 5min candles completed: 1
+2026-03-22 17:30:20 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:TATASTEEL] New 5min candles completed: 1
+2026-03-22 17:30:20 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:TECHM] New 5min candles completed: 1
+2026-03-22 17:30:20 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:TITAN] New 5min candles completed: 1
+2026-03-22 17:30:20 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:UPL] New 5min candles completed: 1
+2026-03-22 17:30:20 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:ULTRACEMCO] New 5min candles completed: 1
+2026-03-22 17:30:20 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:WIPRO] New 5min candles completed: 1
+2026-03-22 17:32:11 | INFO     | app.main:shutdown_event:33 - Shutting down Trading Bot Application...
