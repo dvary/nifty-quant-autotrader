@@ -12,7 +12,8 @@ class YFinanceFeed:
         self.thread = None
         
         self.symbols_to_track = []
-        
+        self.failed_symbols = {} # symbol -> last_log_time
+
     def register_callback(self, callback_func):
         """Register a function to be called on every tick"""
         self.callbacks.append(callback_func)
@@ -21,7 +22,7 @@ class YFinanceFeed:
         self.is_running = True
         self.thread = threading.Thread(target=self._poll_data, daemon=True)
         self.thread.start()
-        logger.info("YFinance Market Data Feed started for all tracked stocks.")
+        logger.info("YFinance Market Data Feed started for Nifty 50.")
         
     def stop(self):
         self.is_running = False
@@ -39,57 +40,44 @@ class YFinanceFeed:
             try:
                 if self.symbols_to_track:
                     yf_symbols = []
-                    # Convert to YF format
+                    symbol_map = {} # YF -> Zerodha
                     for s in self.symbols_to_track:
                         base = s.split(':')[-1]
-                        if base == "NIFTY 50": base = "^NSEI"
-                        elif base == "NIFTY BANK": base = "^NSEBANK"
-                        else: base = base + ".NS"
-                        yf_symbols.append(base)
+                        yf_s = "^NSEI" if base == "NIFTY 50" else ("^NSEBANK" if base == "NIFTY BANK" else f"{base}.NS")
+                        yf_symbols.append(yf_s)
+                        symbol_map[yf_s] = s
                     
-                    # Fetch live tick data for ALL in one request using download
                     data = yf.download(tickers=" ".join(yf_symbols), period="1d", interval="1m", progress=False)
                     
                     if not data.empty and 'Close' in data.columns:
                         timestamp = datetime.now()
                         
-                        # Handle single vs multiple ticker response format
-                        if len(yf_symbols) == 1:
-                            last_row = data.iloc[-1]
-                            s = self.symbols_to_track[0]
+                        last_row_close = data['Close'].iloc[-1]
+                        last_row_vol = data['Volume'].iloc[-1] if 'Volume' in data.columns else None
+                        
+                        for yf_s in yf_symbols:
+                            s = symbol_map[yf_s]
+                            close_val = last_row_close[yf_s] if yf_s in last_row_close else None
+                            
+                            if pd.isna(close_val):
+                                # Avoid log spam: only log once per hour for missing data
+                                if s not in self.failed_symbols or (time.time() - self.failed_symbols[s]) > 3600:
+                                    logger.warning(f"No price data found for {s} (possibly delisted or closed).")
+                                    self.failed_symbols[s] = time.time()
+                                continue
+                                    
                             tick = {
                                 'instrument_token': 0,
                                 'symbol': s,
-                                'last_price': float(last_row['Close']),
-                                'volume_traded': int(last_row['Volume']) if 'Volume' in last_row else 0,
+                                'last_price': float(close_val),
+                                'volume_traded': int(last_row_vol[yf_s]) if last_row_vol is not None and not pd.isna(last_row_vol[yf_s]) else 0,
                                 'exchange_timestamp': timestamp 
                             }
-                            for cb in self.callbacks: cb(tick)
-                        else:
-                            last_row_close = data['Close'].iloc[-1]
-                            last_row_vol = data['Volume'].iloc[-1] if 'Volume' in data.columns else None
-                            
-                            for i, yf_s in enumerate(yf_symbols):
-                                s = self.symbols_to_track[i]
-                                close_val = last_row_close[yf_s] if yf_s in last_row_close else None
-                                
-                                if pd.isna(close_val):
-                                    continue
-                                    
-                                vol_val = last_row_vol[yf_s] if last_row_vol is not None and yf_s in last_row_vol else 0
-                                
-                                tick = {
-                                    'instrument_token': 0,
-                                    'symbol': s,
-                                    'last_price': float(close_val),
-                                    'volume_traded': int(vol_val) if not pd.isna(vol_val) else 0,
-                                    'exchange_timestamp': timestamp 
-                                }
-                                for cb in self.callbacks:
-                                    try: cb(tick)
-                                    except Exception: pass
+                            for cb in self.callbacks:
+                                try: cb(tick)
+                                except: pass
                                     
             except Exception as e:
                 logger.error(f"Error fetching bulk YFinance data: {e}")
                 
-            time.sleep(15) # Poll every 15 seconds to avoid breaking Yahoo rate limits and 5m candle isn't fast
+            time.sleep(15)

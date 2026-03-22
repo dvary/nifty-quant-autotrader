@@ -8,8 +8,6 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./app:/app/app
-      - ./dashboard:/app/dashboard
       - ./data:/app/data
       - .env:/app/.env
     env_file:
