@@ -125,3 +125,46 @@ def get_tracking_status():
     tracking.sort(key=lambda x: abs(x['distance_pct']))
     
     return {"tracking": tracking}
+
+@router.get("/charts/{symbol}")
+def get_chart_data(symbol: str):
+    """Returns OHLC + EMA history for charting"""
+    import pandas as pd
+    from ta.trend import EMAIndicator
+    
+    # Try with and without exchange prefix
+    full_symbol = f"NSE:{symbol}" if ":" not in symbol else symbol
+    
+    hist = engine.aggregator.get_history(full_symbol)
+    if hist.empty:
+        return {"status": "error", "message": f"No data found for {full_symbol}"}
+        
+    df = hist.copy()
+    
+    # Ensure EMAs are calculated for the full history
+    if len(df) >= 44:
+        df['ma_44'] = EMAIndicator(close=df['close'], window=44).ema_indicator()
+    if len(df) >= 200:
+        df['ma_200'] = EMAIndicator(close=df['close'], window=200).ema_indicator()
+        
+    # Format for Lightweight Charts (timestamp needs to be unix)
+    data = []
+    for idx, row in df.iterrows():
+        item = {
+            "time": int(idx.timestamp()),
+            "open": float(row['open']),
+            "high": float(row['high']),
+            "low": float(row['low']),
+            "close": float(row['close']),
+        }
+        if 'ma_44' in row and not pd.isna(row['ma_44']):
+            item['ma_44'] = float(row['ma_44'])
+        if 'ma_200' in row and not pd.isna(row['ma_200']):
+            item['ma_200'] = float(row['ma_200'])
+        data.append(item)
+        
+    return {
+        "symbol": symbol,
+        "timeframe": engine.aggregator.timeframe,
+        "candles": data
+    }

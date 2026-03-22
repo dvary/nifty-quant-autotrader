@@ -942,3 +942,6 @@
 2026-03-22 18:00:16 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:UPL] New 5min candles completed: 1
 2026-03-22 18:00:16 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:ULTRACEMCO] New 5min candles completed: 1
 2026-03-22 18:00:16 | DEBUG    | app.data.aggregator:_notify_new_candles:88 - [NSE:WIPRO] New 5min candles completed: 1
+2026-03-22 18:04:04 | WARNING  | app.broker.yfinance_feed:_poll_data:65 - No price data found for NSE:ASIANPAINT (possibly delisted or closed).
+2026-03-22 18:04:05 | WARNING  | app.broker.yfinance_feed:_poll_data:65 - No price data found for NSE:HINDUNILVR (possibly delisted or closed).
+2026-03-22 18:04:48 | INFO     | app.main:shutdown_event:33 - Shutting down Trading Bot Application...

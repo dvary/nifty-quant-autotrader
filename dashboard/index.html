@@ -297,15 +297,15 @@
                     const distClass = t.distance_pct > 0 ? 'green' : (t.distance_pct > -1.0 ? 'red' : '');
                     const statusBadge = t.status === 'IN POSITION' ? 'badge-buy' : (t.status === 'NEAR CROSSOVER' ? 'badge-sell' : '');
                     
-                    // Generate TradingView Link (NSE:SYMBOL)
+                    // Generate Native Chart Link
                     const baseSymbol = t.symbol.split(':').pop();
-                    const tvLink = `https://www.tradingview.com/chart/?symbol=NSE:${baseSymbol}`;
+                    const chartLink = `/dashboard/chart.html?symbol=${baseSymbol}`;
                     
                     html += `
                         <tr>
                             <td>
-                                <a href="${tvLink}" target="_blank" style="color: #4facfe; text-decoration: none;" title="Open 44/200 EMA Chart in TradingView">
-                                    <strong>${t.symbol} 🔗</strong>
+                                <a href="${chartLink}" target="_blank" style="color: #4facfe; text-decoration: none;" title="Open Native 44/200 EMA Setup Chart">
+                                    <strong>${t.symbol} 📈</strong>
                                 </a>
                             </td>
                             <td>₹${t.ltp.toLocaleString()}</td>
